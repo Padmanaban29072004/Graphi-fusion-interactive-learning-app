@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphi Fusion - Profile</title>
+    <link rel="stylesheet" href="profile-style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html">Graphi Fusion</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-profile">
+            <a href="profile.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="/images/image4.jpg" alt="Profile Avatar" id="profile-image">
+                <div class="edit-avatar">
+                    <label for="avatar-upload">
+                        <i class="fas fa-camera"></i>
+                    </label>
+                    <input type="file" id="avatar-upload" hidden>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p>Student</p>
+            </div>
+        </div>
+
+        <!-- Profile Stats -->
+        <div class="profile-stats">
+            <div class="stat-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Courses</h3>
+                <p>2 Active</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Achievements</h3>
+                <p>5 Earned</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Progress</h3>
+                <p>45% Overall</p>
+            </div>
+        </div>
+
+        <!-- Course Progress -->
+        <div class="course-progress">
+            <h2>Course Progress</h2>
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <div class="course-info">
+                        <h3>Trigonometry</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%"></div>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <a href="courses.html" class="continue-btn">Continue</a>
+                </div>
+                <div class="progress-card">
+                    <div class="course-info">
+                        <h3>Biology</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%"></div>
+                            <span>30%</span>
+                        </div>
+                    </div>
+                    <a href="courses.html" class="continue-btn">Continue</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Achievements -->
+        <div class="achievements">
+            <h2>Recent Achievements</h2>
+            <div class="achievement-cards">
+                <div class="achievement-card">
+                    <i class="fas fa-star"></i>
+                    <h3>First Quiz Completed</h3>
+                    <p>Completed your first quiz successfully</p>
+                </div>
+                <div class="achievement-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Chapter Master</h3>
+                    <p>Completed all chapters in Basic Path</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html> 

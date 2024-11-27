@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphi Fusion - Sign Up</title>
+    <link rel="stylesheet" href="auth-style.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <a href="index.html" class="logo">Graphi Fusion</a>
+            <div class="level-indicator">New Player</div>
+        </div>
+
+        <div class="game-world">
+            <div class="floating-elements">
+                <div class="float-item" data-speed="2"><i class="fas fa-cube"></i></div>
+                <div class="float-item" data-speed="1"><i class="fas fa-brain"></i></div>
+                <div class="float-item" data-speed="3"><i class="fas fa-atom"></i></div>
+                <div class="float-item" data-speed="2"><i class="fas fa-dna"></i></div>
+            </div>
+
+            <div class="auth-card">
+                <div class="card-header">
+                    <h2>Begin Your Journey</h2>
+                    <div class="xp-badge">+100 XP</div>
+                </div>
+
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username" required>
+                            <div class="power-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" required>
+                            <div class="power-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" required>
+                            <div class="power-bar"></div>
+                        </div>
+                        <div class="password-strength"></div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Create Character</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Already a player? <a href="login.html">Login Here</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
